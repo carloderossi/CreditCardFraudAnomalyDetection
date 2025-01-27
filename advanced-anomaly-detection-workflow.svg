@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600">
+    <!-- Background -->
+    <rect width="1000" height="600" fill="#f4f4f4"/>
+    
+    <!-- Workflow Stages with Arrows -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+        <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+    
+    <!-- Stage 1: Data Preprocessing -->
+    <rect x="50" y="50" width="200" height="120" fill="#e6f2ff" rx="10" stroke="#3399ff"/>
+    <text x="150" y="80" text-anchor="middle" font-weight="bold">Stage 1: Data Preprocessing</text>
+    <text x="150" y="110" text-anchor="middle" font-size="12">• Clean Data</text>
+    <text x="150" y="130" text-anchor="middle" font-size="12">• Normalize Features</text>
+    <text x="150" y="150" text-anchor="middle" font-size="12">• Select Non-Fraudulent Data</text>
+    
+    <!-- Stage 2: Model Training -->
+    <rect x="350" y="50" width="200" height="120" fill="#e6ffe6" rx="10" stroke="#4CAF50"/>
+    <text x="450" y="80" text-anchor="middle" font-weight="bold">Stage 2: Model Training</text>
+    <text x="450" y="110" text-anchor="middle" font-size="12">• Choose Model Architecture</text>
+    <text x="450" y="130" text-anchor="middle" font-size="12">• Train on Normal Transactions</text>
+    <text x="450" y="150" text-anchor="middle" font-size="12">• Learn Latent Representations</text>
+    
+    <!-- Stage 3: Feature Learning -->
+    <rect x="650" y="50" width="200" height="120" fill="#fff2e6" rx="10" stroke="#FF9800"/>
+    <text x="750" y="80" text-anchor="middle" font-weight="bold">Stage 3: Feature Learning</text>
+    <text x="750" y="110" text-anchor="middle" font-size="12">• Extract Key Patterns</text>
+    <text x="750" y="130" text-anchor="middle" font-size="12">• Compute Reconstruction Error</text>
+    <text x="750" y="150" text-anchor="middle" font-size="12">• Build Anomaly Scoring</text>
+    
+    <!-- Stage 4: Anomaly Detection -->
+    <rect x="350" y="250" width="300" height="120" fill="#ffebee" rx="10" stroke="#F44336"/>
+    <text x="500" y="280" text-anchor="middle" font-weight="bold">Stage 4: Anomaly Detection</text>
+    <text x="500" y="310" text-anchor="middle" font-size="12">• Apply Threshold Criteria</text>
+    <text x="500" y="330" text-anchor="middle" font-size="12">• Classify Transactions</text>
+    <text x="500" y="350" text-anchor="middle" font-size="12">• Generate Anomaly Alerts</text>
+    
+    <!-- Connecting Arrows -->
+    <line x1="250" y1="110" x2="350" y2="110" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="550" y1="110" x2="650" y2="110" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <line x1="750" y1="170" x2="500" y2="250" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+    
+    <!-- Legend -->
+    <rect x="50" y="500" width="900" height="80" fill="#e0e0e0" rx="10"/>
+    <circle cx="100" cy="540" r="15" fill="#4CAF50"/>
+    <text x="130" y="545" font-size="12">Normal Transactions</text>
+    <circle cx="300" cy="540" r="15" fill="#F44336"/>
+    <text x="330" y="545" font-size="12">Anomalous Transactions</text>
+    <circle cx="500" cy="540" r="15" fill="#2196F3"/>
+    <text x="530" y="545" font-size="12">Reconstruction Error</text>
+    <circle cx="700" cy="540" r="15" fill="#FF9800"/>
+    <text x="730" y="545" font-size="12">Threshold Evaluation</text>
+</svg>
